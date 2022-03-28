@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="styles.css" rel="stylesheet">
+    <title>Alyoshka Myshko</title>
+
+
+</head>
+<body>
+    <button id="backToTop">⌤</button>
+    <nav id="nav">
+        <ul>
+            <li><a name="countries">Countries</a></li>
+            <li><a name="hobbies">Hobbies</a></li>
+            <li><a name="shows">TV</a></li>
+            <li><a name="schedule">Schedule</a></li>
+            <li><a name="music">Music</a></li>
+        </ul>
+    </nav>
+
+    <div id="main">
+        <div id="introduction">
+            <h1 id="title">Welcome to <span id="titleName"><br>Alyoshka's</span> Portfolio</h1>
+            <p id="titleCap">
+                Hi, my name is Alyoshka Myshko and I am currently in grade 10.
+                I enjoy programming and I'm planning to major in computer science in the future.
+                I also enjoy playing sports, watching TV and hanging out with friends.
+            </p>
+
+        </div>
+        <img id="homepage" src="media/homepage.jpeg" alt="Oversaturated photo of me">
+    </div>
+
+    <div id="countries">
+    <h1 class="headers">Countries I've Been To</h2>
+        <div id="places">
+            <div class="placesImage place1"><p>USA</p></div>
+            <div class="placesImage place2"><p>Cuba</p></div>
+            <div class="placesImage place3"><p>Italy</p></div>
+            <div class="placesImage place4"><p>Sweden</p></div>
+            <div class="placesImage place5"><p>Ukraine</p></div>
+            <div class="placesImage place6"><p>Canada</p></div>
+        </div>
+    </div>
+
+    <div id="hobbies">
+        <h1 class="headers">My Hobbies</h1>
+        <h2>Programming</h2>
+        <marquee width="100%" direction="right">
+            01110000 01110010 01101111 01100111 01110010 01100001 01101101 01101101 01101001 01101110 01100111
+        </marquee>
+        <iframe frameborder="0" width="100%" height="500px" src="https://replit.com/@AlyoshkaMyshko/Programming?embed=true"></iframe>
+        <h2>Sports</h2>
+        <p id="ballSpeedHead">Speed:</p>
+        <input id="ballSpeed" type="range" min="3" max="20" value="14">
+        <p id="sportsDesc">My favorite sports are soccer and volleyball.<br>Try to click one!</p>
+        <a class="sports" href="https://www.bundesliga.com/en/faq/all-you-need-to-know-about-soccer" target="_blank"><img id="soccerball" src="media/soccerball.png"></a>
+        <a class="sports" href="https://www.theartofcoachingvolleyball.com/basic-volleyball-rules-and-terminology/#:~:text=A%20volleyball%20game%20consists%20of,team%20serves%20the%20ball%20first." target="_blank"><img id="volleyball" src="media/volleyball.png"></a>
+    </div>
+
+    <div id="shows">
+        <h1 class="headers">Favourite Shows & Movies</h1>
+        <button class="showControls" id="prevVid">▭‹</button>
+        <h2 id="videoNames">Black Panther</h2>
+        <button class="showControls" id="nextVid">›▭</button>
+        <iframe id="video" src="https://www.youtube.com/embed/xjDjIWPwcPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div id="schedule">
+    <h1 class="headers">My Schedule</h1>
+        <table>
+            <tr class="header">
+                <th>Class</th>
+                <th>Room</th>
+                <th>Teacher</th>
+            </tr>
+            <tr class="odd" data-href="https://moscrop.burnabyschools.ca/departments/applied-skills/technology-education/">
+                <td class="class">Robotics & Electronics</td>
+                <td>120</td>
+                <td class="teacher">Der, Matthew</td>
+            </tr>
+            <tr class="even" data-href="https://moscrop.burnabyschools.ca/departments/science/">
+                <td class="class">Sciences</td>
+                <td>231</td>
+                <td class="teacher">Cameron, Brian</td>
+            </tr>
+            <tr class="odd" data-href="https://moscrop.burnabyschools.ca/wp-content/uploads/2022/01/Moscrop-English-Course-Selection-2022-23.pdf">
+                <td class="class">Creative Writing Leadership</td>
+                <td>321</td>
+                <td class="teacher">Brown, Shelley</td>
+            </tr>
+            <tr class="even" data-href="https://moscrop.burnabyschools.ca/departments/physical-education/">
+                <td class="class">Physical & Health Education</td>
+                <td>GYM 10</td>
+                <td class="teacher">Mehta, Nikesh</td>
+            </tr>
+            <tr class="odd" data-href="https://moscrop.burnabyschools.ca/wp-content/uploads/2022/01/22_23-Course-Offerings-1.pdf">
+                <td class="class">Computer Studies</td>
+                <td>312</td>
+                <td class="teacher">So, Raymond</td>
+            </tr>
+            <tr class="even" data-href="https://moscrop.burnabyschools.ca/departments/mathematics/">
+                <td class="class">Mathematics</td>
+                <td>229</td>
+                <td class="teacher">Chiru, Ioana</td>
+            </tr>
+
+            <tr class="odd" data-href="https://moscrop.burnabyschools.ca/departments/languages/french-immersion/">
+                <td class="class">French</td>
+                <td>234</td>
+                <td class="teacher">Bacot, Roberta</td>
+            </tr>
+            <tr class="even" data-href="https://moscropsocialstudies.weebly.com/courses.html">
+                <td class="class">Social Studies</td>
+                <td>233</td>
+                <td class="teacher">Kazulin, Tatiana</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="music">
+        <h1 class="headers">Favorite Songs</h1>
+        <ol>
+            <li><p>Long Drives</p><iframe id="song1" width="560" height="315" src="https://www.youtube.com/embed/FIILsSmS_nA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li><p>Stressed Out</p><iframe id="song2" width="560" height="315" src="https://www.youtube.com/embed/pXRviuL6vMY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+            <li><p>Counting Stars</p><iframe id="song3" width="560" height="315" src="https://www.youtube.com/embed/hT_nvWreIhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></li>
+        </ol>
+    </div>
+
+
+<style>
+  
+/* COLORS
+#003166 - primary
+#DBECEA - background
+#378884 - secondary
+*/
+:root {
+    --ballSpeed: 7s;
+}
+body {
+    background-color: #DBECEA;
+    overflow-x: hidden;
+}
+#backToTop {
+    z-index: 2;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 60px;
+    width: 60px;
+    color: #378884;
+    font-size: 40px;
+    background-color: #DBECEA80;
+    border-radius: 50px;
+    border: 3px solid #378884;
+    transition: 0.2s linear;
+}
+#backToTop:hover {
+    cursor: pointer;
+    background-color: #37888420;
+    transition: 0.2s linear;
+}
+nav {
+    height: 20px;
+    display: flex;
+    justify-content: left;
+    margin: 10px 0;
+    position: relative;
+    top: 50px;
+    z-index: 1;
+}
+nav ul{
+    list-style-type: none;
+}
+nav li {
+    display: inline-block;
+    margin: 0 30px;
+}
+nav a {
+    text-decoration: none;
+    color: #378884;
+    float: right;
+    padding: 5px;
+    font-size: 20px;
+}
+nav a:hover {
+    cursor: pointer;
+}
+.highlight {
+    transition: all 0.2s;
+    border-bottom: 2px solid #378884;
+    position: absolute;
+    top: 0;
+    background: #95c2bf;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+    display: block;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+#main {
+    position: relative;
+}
+#introduction {
+    display: inline-block;
+    position: relative;
+    left: 4%;
+}
+#title {
+    font-size: 80px;
+}
+#titleName {
+    color: #003166;
+    text-shadow: 2px 2px 10px #378884;
+}
+#titleCap {
+    font-size: 30px;
+    width: 700px;
+}
+#homepage {
+    height: 500px;
+    margin: 0 6% 0 10%;
+    display: inline-block;
+    position: relative;
+    top: 40px;
+}
+
+.headers {
+    text-align: center;
+    font-size: 60px;
+    color: #003166
+}
+
+#countries {
+    margin-top: 60px;
+    text-align: center;
+}
+#places {
+    height: 720px;
+    max-width: 100vw;
+    display: flex;
+
+}
+.placesImage {
+    z-index: 1;
+    display: flex;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.placesOpen {
+    flex: 6;
+}
+
+.place1 { background-image: url(https://source.unsplash.com/L4JWn8HHJ30); }
+.place2 { background-image: url(https://source.unsplash.com/uLh71gTmZ4g); }
+.place3 { background-image: url(https://source.unsplash.com/75XHJzEIeUc); }
+.place4 { background-image: url(https://source.unsplash.com/3cwvFD-YPtk); }
+.place5 { background-image: url(https://source.unsplash.com/z0j9Qf9jZ58); }
+.place6 { background-image: url(https://source.unsplash.com/Bs_ac8eRkME); }
+
+.placesImage p {
+    transform: translateY(-100vh);
+    transition: all 0.5s ease-in-out;
+    font-size: 50px;
+    color: white;
+}
+.placesImage.placesOpen p {
+    transform: translateY(0);
+}
+
+#hobbies {
+    width: 80%;
+    margin: 60px auto;
+}
+#hobbies h2 {
+    font-size: 40px;
+    color: #378884;
+}
+#hobbies marquee {
+    width: 140%;
+    position: relative;
+    left: -20%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "Lucida Console";
+}
+#programmingImage {
+    width: 100%;
+    box-shadow: 8px 8px 10px #378884;
+}
+
+#sportsDesc {
+    font-size: 30px;
+    width: 100%;
+}
+#ballSpeedHead {
+    font-size: 20px;
+    margin: 5px auto;
+}
+.sports:hover {
+    cursor: pointer;
+}
+@keyframes soccerFlow {
+    0% {transform: translateX(70vw) rotate(0deg);}
+    49% {transform: translateX(-70vw) rotate(0deg);}
+    50% {transform: translateX(-70vw) rotate(180deg);}
+    100% {transform: translateX(70vw) rotate(180deg)}
+}
+#soccerball {
+    animation: soccerFlow var(--ballSpeed) infinite;
+    position: relative;
+    top: -7vw; /*-80px */
+    left: 30vw; /*450px*/
+    width: 23vw; /*350px*/
+}
+@keyframes volleyballFlow {
+    0% {transform: translateX(-70vw) rotate(0deg);}
+    49% {transform: translateX(70vw) rotate(0deg);}
+    50% {transform: translateX(70vw) rotate(180deg);}
+    100% {transform: translateX(-70vw) rotate(180deg)}
+}
+#volleyball {
+    animation: volleyballFlow var(--ballSpeed) infinite;
+    position: relative;
+    left: 9vw; /*100px*/
+    width: 18vw;
+}
+
+
+#shows {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+#videoNames {
+    font-size: 40px;
+    color: #378884;
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto;
+}
+#video {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    border: 10px inset #378884;
+}
+.showControls {
+    color: #378884;
+    font-size: 80px;
+    display: inline-block;
+    background-color: #ffffff00;
+    border: 0 solid white;
+}
+.showControls:hover {
+    cursor: pointer;
+}
+#prevVid {
+    float: left;
+}
+#nextVid {
+    float: right;
+}
+
+#schedule {
+    margin: 150px auto;
+    width: 80%;
+}
+#schedule table {
+    width: 100%;
+    font-size: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+#schedule .header {
+    text-transform: uppercase;
+    color: white;
+    background-color: #378884;
+    border-left: 1px solid #378884;
+    border-right: 1px solid #378884;
+}
+#schedule .even {
+    background-color: #4EBBB7;
+}
+#schedule .even:hover {
+    background-color: #44B1AD;
+}
+#schedule .odd:hover {
+    background-color: #D1E2E0;
+}
+#schedule tr:hover {
+    cursor: pointer;
+}
+#schedule th, td {
+    padding: 15px 0px;
+}
+#schedule .class {
+    border-left: 1px solid #4EBBB7;
+}
+#schedule .teacher {
+    font-style: italic;
+    border-right: 1px solid #4EBBB7;
+}
+
+#music {
+    color: #003166;
+    font-size: 30px;
+}
+#music ol {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#music li {
+    flex: 1;
+}
+
+@media screen and (max-width: 800px) {
+    #titleCap {
+        width: 90%;
+    }
+}
+@media screen and (max-width: 1350px) {
+    #introduction {
+        margin-top: 5px;
+        top: 0;
+    }
+    #homepage {
+        top: 2em;
+    }
+}
+</style>
+  
+
+<script>
+
+    // NAVIGATION
+    const triggers = document.querySelectorAll('nav a');
+    const highlight = document.createElement('span');
+    highlight.classList.add('highlight');
+    document.body.append(highlight);
+
+    function highlightLink() {
+      const linkCoords = this.getBoundingClientRect();
+      const coords = {
+          width: linkCoords.width,
+        height: linkCoords.height,
+        top: linkCoords.top + window.scrollY,
+        left: linkCoords.left + window.scrollX
+    }
+    highlight.style.width = `${coords.width}px`;
+      highlight.style.height = `${coords.height}px`;
+      highlight.style.transform = `translate(${coords.left}px, ${coords.top}px`;
+    }
+    triggers.forEach(a => a.addEventListener('mouseenter', highlightLink));
+
+    // SMOOTH SCROLL NAVIGATION
+
+    function scrollFunc() {
+        const scrollLocation = document.querySelector(`#${this.name}`);
+        window.scrollTo({
+            top: scrollLocation.getBoundingClientRect()['top'],
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    const navs = document.querySelectorAll('nav a');
+    navs.forEach(nav => nav.addEventListener('click', scrollFunc));
+
+    // COUNTRIES I'VE BEEN TO
+    const placesImage = document.querySelectorAll('.placesImage');
+    function openImage(e) {
+        this.classList.add('placesOpen')
+    }
+    function closeImage(e) {
+        this.classList.remove('placesOpen')
+    }
+    placesImage.forEach(place => place.addEventListener('mouseover', openImage));
+    placesImage.forEach(place => place.addEventListener('mouseout', closeImage));
+
+    // TV SHOWS & MOVIES
+    const video = document.querySelector('#video');
+    const videoNames = document.querySelector('#videoNames');
+    const videos = ["https://www.youtube.com/embed/xjDjIWPwcPU", "https://www.youtube.com/embed/NgZXnTZbF3g", "https://www.youtube.com/embed/4OtM9j2lcUA", "https://www.youtube.com/embed/sEOuJ4z5aTc"];
+    const vidNames = ["Black Panther", "Superstore", "Now You See Me", "Brooklyn Nine-Nine"];
+    const vidAmount = videos.length;
+    const nextVid = document.querySelector('#nextVid');
+    const prevVid = document.querySelector('#prevVid');
+    let currentVid = 0;
+    function nextVideo() {
+        currentVid++;
+        if (currentVid > vidAmount - 1) currentVid = 0;
+        video.src = videos[currentVid];
+        videoNames.textContent = vidNames[currentVid];
+    }
+    function prevVideo() {
+        currentVid--;
+        if (currentVid < 0) currentVid = vidAmount - 1;
+        video.src = videos[currentVid];
+        videoNames.textContent = vidNames[currentVid];
+    }
+    nextVid.addEventListener('click', nextVideo);
+    prevVid.addEventListener('click', prevVideo);
+    function videoResize() {
+        video.style.height = `${video.clientWidth/1.77}px`;
+    }
+    window.addEventListener('load', videoResize);
+    window.addEventListener('resize', videoResize);
+
+    // SPORTS
+    const ballSpeed = document.querySelector('#ballSpeed');
+
+    function changeSpeed() {
+        document.documentElement.style.setProperty('--ballSpeed', (21 - ballSpeed.value) + 's');
+    }
+    ballSpeed.addEventListener('change', changeSpeed);
+
+    // SCHEDULE
+    const classes = document.querySelectorAll('#schedule tr');
+    classes.forEach(course => course.addEventListener('click', () => window.open(course.dataset.href)));
+
+    // BACK TO TOP
+    const backToTop = document.querySelector('#backToTop');
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        });
+    });
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+</body>
+</html>
