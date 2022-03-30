@@ -78,43 +78,43 @@
                 <th>Room</th>
                 <th>Teacher</th>
             </tr>
-            <tr class="odd" data-href="https://moscrop.burnabyschools.ca/departments/applied-skills/technology-education/">
+            <tr class="course odd" data-href="https://moscrop.burnabyschools.ca/departments/applied-skills/technology-education/">
                 <td class="class">Robotics & Electronics</td>
                 <td>120</td>
                 <td class="teacher">Der, Matthew</td>
             </tr>
-            <tr class="even" data-href="https://moscrop.burnabyschools.ca/departments/science/">
+            <tr class="course even" data-href="https://moscrop.burnabyschools.ca/departments/science/">
                 <td class="class">Sciences</td>
                 <td>231</td>
                 <td class="teacher">Cameron, Brian</td>
             </tr>
-            <tr class="odd" data-href="https://moscrop.burnabyschools.ca/wp-content/uploads/2022/01/Moscrop-English-Course-Selection-2022-23.pdf">
+            <tr class="course odd" data-href="https://moscrop.burnabyschools.ca/wp-content/uploads/2022/01/Moscrop-English-Course-Selection-2022-23.pdf">
                 <td class="class">Creative Writing Leadership</td>
                 <td>321</td>
                 <td class="teacher">Brown, Shelley</td>
             </tr>
-            <tr class="even" data-href="https://moscrop.burnabyschools.ca/departments/physical-education/">
+            <tr class="course even" data-href="https://moscrop.burnabyschools.ca/departments/physical-education/">
                 <td class="class">Physical & Health Education</td>
                 <td>GYM 10</td>
                 <td class="teacher">Mehta, Nikesh</td>
             </tr>
-            <tr class="odd" data-href="https://moscrop.burnabyschools.ca/wp-content/uploads/2022/01/22_23-Course-Offerings-1.pdf">
+            <tr class="course odd" data-href="https://moscrop.burnabyschools.ca/wp-content/uploads/2022/01/22_23-Course-Offerings-1.pdf">
                 <td class="class">Computer Studies</td>
                 <td>312</td>
                 <td class="teacher">So, Raymond</td>
             </tr>
-            <tr class="even" data-href="https://moscrop.burnabyschools.ca/departments/mathematics/">
+            <tr class="course even" data-href="https://moscrop.burnabyschools.ca/departments/mathematics/">
                 <td class="class">Mathematics</td>
                 <td>229</td>
                 <td class="teacher">Chiru, Ioana</td>
             </tr>
 
-            <tr class="odd" data-href="https://moscrop.burnabyschools.ca/departments/languages/french-immersion/">
+            <tr class="course odd" data-href="https://moscrop.burnabyschools.ca/departments/languages/french-immersion/">
                 <td class="class">French</td>
                 <td>234</td>
                 <td class="teacher">Bacot, Roberta</td>
             </tr>
-            <tr class="even" data-href="https://moscropsocialstudies.weebly.com/courses.html">
+            <tr class="course even" data-href="https://moscropsocialstudies.weebly.com/courses.html">
                 <td class="class">Social Studies</td>
                 <td>233</td>
                 <td class="teacher">Kazulin, Tatiana</td>
@@ -399,7 +399,7 @@ nav a:hover {
 #schedule .odd:hover {
     background-color: #D1E2E0;
 }
-#schedule tr:hover {
+#schedule .course:hover {
     cursor: pointer;
 }
 #schedule th, td {
@@ -528,7 +528,7 @@ nav a:hover {
     ballSpeed.addEventListener('change', changeSpeed);
 
     // SCHEDULE
-    const classes = document.querySelectorAll('#schedule tr');
+    const classes = document.querySelectorAll('#schedule .course');
     classes.forEach(course => course.addEventListener('click', () => window.open(course.dataset.href)));
 
     // BACK TO TOP
